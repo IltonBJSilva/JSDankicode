@@ -38,11 +38,16 @@
 
                 }
              }
+             verificaTamanhoEAplicaCor();
 
             setInterval(function(){
                 verificaTamanhoEAplicaCor();
             }, 3000)
+            $(window).resize(function(){
+                verificaTamanhoEAplicaCor();
+            })
         })
+
 
         </script>
     </body>
