@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .filho{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+    <body>
+
+        <script>
+            //Aplicar cor vermelha nos elementos impares
+            console.log('Ola mundo')
+            $(function(){
+                var index = 0;
+                $('.pai .filho').each(function(){
+                    if(index%2 == 1){
+                        $(this).css('background', 'red');
+                    }
+                    index++;
+                })
+                console.log(index);
+            })
+        </script>
+
+        <div class="pai">
+            <div class="filho"></div>
+            <div class="filho"></div>
+            <div class="filho"></div>
+            <div class="filho"></div>
+            <div class="filho"></div>
+            
+        </div>
+
+    </body>
+</html>
