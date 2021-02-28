@@ -14,6 +14,17 @@
         var inputnb = "";
         var lista = ['Ilton', 'Guilherme', 'Vanessa', 'Luciana']
 
+        var nome = prompt("Nome");
+        var idade = prompt("idade");
+        
+        function mostraDados(){
+          document.getElementById("nome").innerHTML = nome
+          document.getElementById("idade").innerHTML = idade
+
+
+
+        }
+
         function mostraLista(){
           /*
           for(var i = 0; i < lista.length; i++){
@@ -27,6 +38,7 @@
 
           })
         }
+  
 
         function retornaLista(){
             myFunction();
@@ -75,9 +87,16 @@
     
     <input  id="inputnb" type="number" name="">
 
+
+    
     <p id="listatoda"></p>
     <p id="nb"></p>
     <p id="demo"></p>
     <p id="value"></p>
+    <br><br>
+
+    <button onclick="mostraDados()">Mostra dados</button>
+    <p id="nome"></p>
+    <p id="idade"></p>
 </body>
 </html>
