@@ -13,7 +13,20 @@
 
         var inputnb = "";
         var lista = ['Ilton', 'Guilherme', 'Vanessa', 'Luciana']
+        
+        var anoAtual = prompt("Digite o ano atual");
+        var anoNascimento = prompt("Digite o ano de nascimento");
 
+        var idade = anoAtual - anoNascimento;
+
+        function mostraIdade(){
+        
+          console.log(idade)
+          document.getElementById("idade").innerHTML = idade
+
+        }
+
+        /*
         var nome = prompt("Nome");
         var idade = prompt("idade");
         
@@ -26,11 +39,11 @@
         }
 
         function mostraLista(){
-          /*
+          
           for(var i = 0; i < lista.length; i++){
             document.getElementById("listatoda").innerHTML = ""+lista
             console.log(lista[i])
-          }*/
+          }
 
           lista.forEach(function(value, index){
             console.log(value)
@@ -64,11 +77,11 @@
               txt = nome;
               lista.push(txt)
               console.log(lista)
-              /*window.open("http://www.google.com/", "minhaJanela", "height=200,width=200");*/
+              window.open("http://www.google.com/", "minhaJanela", "height=200,width=200");
             
             }
             document.getElementById("demo").innerHTML = nome;
-          }
+          }*/
 
           
 
@@ -77,6 +90,11 @@
          
     </script>
 
+    <button onclick="mostraIdade()">Mostra idade</button>
+
+    <p id="idade"></p>
+
+    <!--
     <button onclick="retornaLista()">Mostrar lista</button>
   
     <br>
@@ -88,7 +106,7 @@
     <input  id="inputnb" type="number" name="">
 
 
-    
+      
     <p id="listatoda"></p>
     <p id="nb"></p>
     <p id="demo"></p>
@@ -98,5 +116,6 @@
     <button onclick="mostraDados()">Mostra dados</button>
     <p id="nome"></p>
     <p id="idade"></p>
+    -->
 </body>
 </html>
