@@ -9,15 +9,33 @@
 <body>
     <script>
         
-        function chamada(){
-            document.getElementById("demo").innerHTML = "Ola mundo";
-            window.alert("Ola mundo");
+        var lista = ['Ilton', 'Guilherme', 'Vanessa', 'Luciana']
+
+        function retornaLista(){
+            myFunction();
+
+            document.getElementById("demo").innerHTML = lista[4]
+            
         }
+
+
+        function myFunction() {
+            var txt;
+            var person = prompt("Oque deseja adicionar no array?", "Harry Potter");
+            if (person == null || person == "") {
+              txt = "User cancelled the prompt.";
+            } else { 
+              txt = person;
+              lista.push(txt)
+              console.log(lista)
+            }
+            document.getElementById("demo").innerHTML = person + " Adicionado ao array";
+          }
 
     </script>    
 
-    <button onclick="chamada();">Click here</button>
+    <button onclick="retornaLista()">Mostrar lista</button>
     <p id="demo"></p>
-    
+    <p id="value"></p>
 </body>
 </html>
