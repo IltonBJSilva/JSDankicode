@@ -14,17 +14,20 @@
         var inputnb = "";
         var lista = ['Ilton', 'Guilherme', 'Vanessa', 'Luciana']
         
-        var anoAtual = prompt("Digite o ano atual");
         var anoNascimento = prompt("Digite o ano de nascimento");
+        var anoAtual = prompt("Digite o ano atual");
+       
 
+        while(anoNascimento >= 2021){
+          alert("A idade final é:")
+          anoNascimento = prompt("Ano incorreto | Digite o ano de nascimento");
+        }
+                      
+        
+        
         var idade = anoAtual - anoNascimento;
 
-        function mostraIdade(){
-        
-          console.log(idade)
-          document.getElementById("idade").innerHTML = idade
-
-        }
+        alert("Sua idade e: " + idade);
 
         /*
         var nome = prompt("Nome");
