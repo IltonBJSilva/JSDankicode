@@ -10,14 +10,18 @@
     <script>    
 
             function Pessoa(){
-                this.nome = "guilherme"
+                this.nome = "YO";
+                this.printNome = function(){
+                        alert(this.nome);
+                }
             }
 
             var pessoa = new Pessoa()
-            alert(pessoa.nome)
+            
+            pessoa.printNome(); 
 
-            pessoa.nome = 'ilton';
-            alert(pessoa.nome)
+            //pessoa.nome = 'rodofo';
+            
 
     </script>
 </body>
