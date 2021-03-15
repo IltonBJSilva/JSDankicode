@@ -22,20 +22,22 @@
             class Cachorro extends Animal{
                 constructor(nome){
                     super(nome)
+                    this.raca = "Bulldog";
                     
+                }
+
+                printRaca(){
+                    return this.raca;   
+        
                 }
             }
 
-            class Gato{
+            //valor = prompt("Informe alguma coisa para ser repetida");
 
-            }
-
-            valor = prompt("Informe alguma coisa para ser repetida");
-
-            cachorro = new Cachorro(valor);
+            cachorro = new Cachorro('Rocks');
             
 
-            alert(cachorro.printNome());
+            alert(cachorro.printRaca());
         </script>
 
 
