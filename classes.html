@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Ilton    </title>
     </head>
     <body>
         <script>
@@ -12,13 +12,30 @@
                 constructor(nome){
                     this.nome = nome;
                 }
+
+                printNome(){
+                    return this.nome
+                }
+
             }
+
+            class Cachorro extends Animal{
+                constructor(nome){
+                    super(nome)
+                    
+                }
+            }
+
+            class Gato{
+
+            }
+
             valor = prompt("Informe alguma coisa para ser repetida");
 
-            animal = new Animal(valor);
+            cachorro = new Cachorro(valor);
             
 
-            alert(animal.nome)
+            alert(cachorro.printNome());
         </script>
 
 
