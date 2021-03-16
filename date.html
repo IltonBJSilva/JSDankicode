@@ -9,21 +9,31 @@
     </head>
     <body>
         <script>
-            var date = new Date();
+            
+            //Criar data | Instancia dataFB 
+            //var date = new Date();
             
             //Qual o horario que estamos
-            alert(date.getHours());
+            //alert(date.getHours());
             
             //Qual o ano que estamos
-            alert(date.getFullYear());
+            //alert(date.getFullYear());
             
             //Dia da semana de 0 a 1 | Domingo a Domingo
-            alert(date.getDay());
+            //alert(date.getDay());
             
             //Dia do Mês
-            alert(date.getDate());
+            //alert(date.getDate());
 
+            var date1 = new Date('12/08/2022');
+            
+            var date2 = new Date('10/08/2023')
+            
+            var diferenca = (date2.getTime() - date1.getTime()) / (1000*3600*24);
 
+            alert(diferenca)
+
+            
         </script>
         
     </body>
