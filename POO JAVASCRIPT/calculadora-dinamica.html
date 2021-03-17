@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        /*
+            Aplicação calculadora dinamica
+
+                Queremos um numero inicial
+                Queremos um sinal
+                Queremos um numero final
+
+                validações para operações incapaz de serem realizadas
+        */
+
+    
+        <script>
+            var numeroInicial = parseInt(prompt("Informe o primeiro numero: "));
+            var sinal = prompt("Informe o sinal da sua operação:");
+            var numeroFinal = parseInt(prompt("Informe o segundo numero: "));
+            var resultado;
+
+            while(sinal != '-' && sinal != '+' && sinal != '*' && sinal != '/'){
+                alert('Erro');   
+                sinal = prompt("Digite um sinal valido como \n Para subtração digite: - \n Para soma digite:  + \n Para multiplicação digite:  * \n Para divisão digite:  /"); 
+            }
+
+            switch(sinal){
+                case '-':
+                    resultado = numeroInicial - numeroFinal;
+                    console.log(resultado);
+                    break;
+                case '+':
+                    resultado = numeroInicial + numeroFinal;
+                    console.log(resultado);
+                    break;
+                case '*':
+                    resultado = numeroInicial * numeroFinal;
+                    console.log(resultado);
+                    break;
+                case '/':
+                    resultado = numeroInicial / numeroFinal;
+                    console.log(resultado);
+                    break;
+            }
+
+
+        </script>
+
+    </body>
+</html>
